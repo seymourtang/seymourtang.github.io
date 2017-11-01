@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+    
+    <entry>
+      <title><![CDATA[Ubuntu软件源更换为国内源]]></title>
+      <url>%2F2017%2F08%2F26%2Fubuntusources%2F</url>
+      <content type="text"><![CDATA[Ubuntu默认的软件源是Ubuntu自己的服务器，那么，由于你懂得的原因，国内访问这个软件源速度及其缓慢。 备份原来的源文件 首先，进入源sources.list所在的目录: 1cd /ect/apt/ 然后执行备份指令: 1sudo cp sources.list sources.list.bak 期间需要输入超级用户root的密码。 修改源文件的内容 通过以下指令打开sources.list文件: 1sudo vim sources.list 然后将sources.list文件内容替换为下面的阿里源内容: 1234567891011121314151617#deb包deb http://mirrors.aliyun.com/ubuntu/ xenial main restricted universe multiverse deb http://mirrors.aliyun.com/ubuntu/ xenial-security main restricted universe multiverse deb http://mirrors.aliyun.com/ubuntu/ xenial-updates main restricted universe multiverse deb http://mirrors.aliyun.com/ubuntu/ xenial-backports main restricted universe multiverse ##测试版源 deb http://mirrors.aliyun.com/ubuntu/ xenial-proposed main restricted universe multiverse # 源码 deb-src http://mirrors.aliyun.com/ubuntu/ xenial main restricted universe multiverse deb-src http://mirrors.aliyun.com/ubuntu/ xenial-security main restricted universe multiverse deb-src http://mirrors.aliyun.com/ubuntu/ xenial-updates main restricted universe multiverse deb-src http://mirrors.aliyun.com/ubuntu/ xenial-backports main restricted universe multiverse ##测试版源 deb-src http://mirrors.aliyun.com/ubuntu/ xenial-proposed main restricted universe multiverse # Canonical 合作伙伴和附加 deb http://archive.canonical.com/ubuntu/ xenial partner deb http://extras.ubuntu.com/ubuntu/ xenial main 或者下面的腾讯源： 12345678deb-src http://mirrors.tencentyun.com/old-archives/ubuntu lucid main restricted universe multiversedeb-src http://mirrors.tencentyun.com/old-archives/ubuntu lucid-updates main restricted universe multiversedeb-src http://mirrors.tencentyun.com/old-archives/ubuntu lucid-security main restricted universe multiversedeb-src http://mirrors.tencentyun.com/old-archives/ubuntu lucid-backports main restricted universe multiversedeb http://mirrors.tencentyun.com/old-archives/ubuntu lucid main restricted universe multiversedeb http://mirrors.tencentyun.com/old-archives/ubuntu lucid-updates main restricted universe multiversedeb http://mirrors.tencentyun.com/old-archives/ubuntu lucid-security main restricted universe multiversedeb http://mirrors.tencentyun.com/old-archives/ubuntu lucid-backports main restricted universe multiverse 或者下面的网易源: 12345678910deb http://mirrors.163.com/ubuntu/ wily main restricted universe multiversedeb http://mirrors.163.com/ubuntu/ wily-security main restricted universe multiversedeb http://mirrors.163.com/ubuntu/ wily-updates main restricted universe multiversedeb http://mirrors.163.com/ubuntu/ wily-proposed main restricted universe multiversedeb http://mirrors.163.com/ubuntu/ wily-backports main restricted universe multiversedeb-src http://mirrors.163.com/ubuntu/ wily main restricted universe multiversedeb-src http://mirrors.163.com/ubuntu/ wily-security main restricted universe multiversedeb-src http://mirrors.163.com/ubuntu/ wily-updates main restricted universe multiversedeb-src http://mirrors.163.com/ubuntu/ wily-proposed main restricted universe multiversedeb-src http://mirrors.163.com/ubuntu/ wily-backports main restricted universe multiverse 最后输入:qw保存退出。 更新软件列表和已安装的软件 使用下面的指令来更新获取阿里源提供的软件列表: 1sudo apt-get update 使用下面的指令来更新软件: 1sudo apt-get upgrade]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[更改Windows CMD以及Powershell字体为Consolas]]></title>
+      <url>%2F2017%2F08%2F25%2Fcmdfont%2F</url>
+      <content type="text"><![CDATA[CMD是Command的缩写.即命令提示符（CMD），是在OS / 2 ， Windows CE与Windows NT平台为基础的操作系统（包括Windows 2000和XP中， Vista中，和Server 2003 ）下的“MS-DOS 方式”。中文版Windows XP 中的命令提示符进一步提高了与DOS 下操作命令的兼容性，用户可以在命令提示符直接输入中文调用文件,微软在Windows 7及之后引入了Powershell——一款比CMD更加强大的命令工具。 中文版Windows 10操作系统的CMD以及Powershell界面默认的字体是新宋体，对于写代码的人来说，看新宋体下的英文相当难受，还是看微软自带的Consolas看起来舒服。在Windows 7之前的系统中，可以直接更改CMD的字符编码，但是在Windows 10中已经不能直接更改字符编码了。那么，我们只能通过更改注册表的方式来修改CMD 和Powershell字符编码。 注册表修改字符编码 按Windows+R进入Run,输入regedit,回车进入注册表。 在注册表地址栏输入 1HKEY_CURRENT_USER\Console\%SystemRoot%_system32_cmd.exe 回车后双击右边的CodePage这一注册表项，勾选Base中的Decimal一项(目的是将数值以十进制显示)，然后将Value data中的数值改为437，确认后再打开CMD，右键标题栏，选择属性，选择字体,将字体改为Consolas,保存后字体就变成了Consolas了。对于Powershell,在注册表地址栏输入 1Computer\HKEY_CURRENT_USER\Console\%SystemRoot%_System32_WindowsPowerShell_v1.0_powershell.exe 同样将CodePage中的数值改为437,保存即可。 最终的效果图 P.S.MS-DOS为以下国家和语言提供字符集： 代码 描述 65001 UTF-8字符集 1258 越南语 1257 波罗的语 1256 阿拉伯语 1255 希伯来语 1254 土耳其语 1253 希腊语 1252 拉丁 1 字符 (ANSI) 1251 西里尔语 1250 中欧语言 950 繁体中文 949 朝鲜语 936 简体中文（默认） 932 日语 874 泰国语 866 俄文 850 多语种 (MS-DOS Latin1) 437 MS-DOS 美国英语]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[使用Fiddler抓包拦截用户请求、伪造表单数据]]></title>
+      <url>%2F2017%2F08%2F12%2Ffiddler%2F</url>
+      <content type="text"><![CDATA[Fiddler是位于客户端和服务器端的HTTP代理，也是目前最常用的http抓包工具之一 。 它能够记录客户端和服务器之间的所有 HTTP请求，可以针对特定的HTTP请求，分析请求数据、设置断点、调试web应用、修改请求的数据，甚至可以修改服务器返回的数据，功能非常强大，是web调试的利器。 使用右键编辑Request选择需要重新发送执行的Request请求这里以www.baidu.com 搜索为例子，我们一开始的搜索内容是测试，然后我们需要编辑此次Request请求，修改表单其中的wd的键值，然后继续提交表单请求： 修改表单内容右键点击需要修改的Request，Replay-&gt;Reissue and Edit,右侧栏选择Inspectors，然后修改QueryString栏目下面的wd右边的内容，我们这里改为游戏这个关键词。 提交表单内容点击下面的Run to Completion来提交修改后的请求，我们可以看到返回的信息已经成了游戏的搜索内容了。 使用bpu命令拦截更加好的方式是使用bpu命令拦截特定网址前缀的请求，当需要拦截的网址前缀到达Fiddler的代理服务器时，会自动拦截下来，此时，请求停止发送，Fiddle会在任务栏闪动提示用户进一步操作。这里仍然以www.baidu.com搜索为例： 使用命令定制拦截需求在左侧栏的下面的黑色输入框输入一下命令1bpu www.baidu.com 其含义是指拦截以wwww.baidu.com开头的所有请求，需要清除拦截规则的话，命令栏直接输入bpu回车即可。网页端输入测试这个关键词，然后点击搜索，Fiddler此时会变红，是在提示需要用户进一步的操作。 修改表单内容然后在右侧栏选择Inspectors，然后修改QueryString栏目下面的wd右边的内容，我们这里改为游戏这个关键词。 提交表单内容点击下面的Run to Completion来提交修改后的请求，我们可以看到返回的信息已经成了游戏的搜索内容了，而搜索框仍然是修改请求之前的测试关键词。P.S. 最后给一个修改了微博iPhone 客户端的UA的效果图，测试设备是iPhone 6s,拦截发微博时的Request请求，修改其中的UA为iPhone 9,2(这是iPhone 7 Plus的机型识别型号),然后提交请求即可。]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[Nginx启用HSTS使浏览器强制跳转HTTS访问]]></title>
+      <url>%2F2017%2F08%2F06%2Faddhsts%2F</url>
+      <content type="text"><![CDATA[在网站全站HTTPS后，如果用户手动敲入网站的HTTP地址，或者从其它地方点击了网站的HTTP链接，通常依赖于服务器端的301/302重定向跳转才能使用HTTPS服务。而第一次的HTTP请求就有可能被劫持，导致请求无法到达服务器，从而构成HTTPS降级劫持。这个问题目前可以通过HSTS(HTTP Strict Transport Security，RFC6797)来解决。 HSTS简介HSTS(HTTP Strict Transport Security)是国际互联网工程组织IETF发布的一种互联网安全策略机制。采用HSTS策略的网站将保证浏览器始终连接到该网站的HTTPS加密版本，不需要用户手动在URL地址栏中输入加密地址，以减少会话劫持风险。 HSTS响应头格式1Strict-Transport-Security: max-age=expireTime [; includeSubDomains] [; preload] 在Nginx启用HSTS打开vim /etc/nginx/sites-available/default,在server中的443端口添加1add_header Strict-Transport-Security "max-age=63072000; includeSubdomains; preload"; 重启Nginx最后重启Nginx即可。1service nginx restart]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[Ubuntu添加系统调用]]></title>
+      <url>%2F2017%2F06%2F22%2Flinuxsyscall%2F</url>
+      <content type="text"><![CDATA[系统调用（System Call）是操作系统为在用户态运行的进程与硬件设备（如CPU、磁盘、打印机等）进行交互提供的一组接口。当用户进程需要发生系统调用时，CPU 通过软中断切换到内核态开始执行内核系统调用函数. 我们需要完成： 下载最新版本的Linux内核源代码，在Linux系统中解压缩，大致观察内核源代码的组成结构。然后编译这个版本的内核代码，并尝试用编译出的内核重新引导系统。 添加一个新的系统调用，完成任意一个功能，重新编译和运行内核，使新的系统调用可用。 编写一个用户态的程序，使用增加的系统调用，以证明它确实可以用。 开发环境： Linux 发行版 Ubuntu 16.10 VMware Workstation Pro 12.6 Linux 内核版本 4.11.6 虚拟机分配内存：4GB 虚拟机分配空间：50GB SSD 在VMware Workstation上安装Ubuntu 16.10; 进入Ubuntu系统，更新软件源代码. 1sudo apt-get install update 下载编译过程中的所需的软件依赖包. 1234sudo apt-get install libncurses5-dev libssl-dev sudo apt-get install build-essential openssl sudo apt-get install zlibc minizip sudo apt-get install libidn11-dev libidn11 依赖包说明： libncurses5-dev :主要是在make menuconfig时能够出现图形化的选择菜单所依赖的的库 libssl-dev : openssl的依赖包 build-essential：建立debian软件包的工具 openssl ：涉及到系统安全的编译过程中的相关程序的依赖库 zlibc ：允许运行中的文件能够实现解压缩数据文件的一个工具 minizip ：是一个轻量级的支持库，能够支持压缩、提取、查看和操作ZIP文件。该软件包包括minizip和miniunzip工具 libidn11-dev ： 涉及到系统帮助等文档以及软件库等信息的一个软件包 通过git下载Linux 内核 4.11.6. 1git clone git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git 以root管理权限解压内核到 /usr/src/. 12sudo cd /usr/srcsudo tar -xvf linux-4.11.6.tar.xz Ubuntu安装Vim编辑器. 1sudo apt-get install vim 用Vim打开/kernel/sys.c文件，加入linkage.h的头文件,在文件末尾加入要加入的系统调用函数. 1sudo vim linux-4.11.6/kernel/sys.c 加入系统调用函数声明。在linux-4.11.6/arch/x86/include/asm/syscalls.h 中加入asmlinkage void sys_quicksort(int [],int,int); 1sudo vim linux-4.11.6/arch/x86/include/asm/syscalls.h 加入系统调用号。在linux-4.11.6/arch/x86/entry/syscalls/syscall_64.tbl. 1sudo vim linux-4.11.6/arch/x86/entry/syscalls/syscall_64.tbl 编译内核和安装内核. 123sudo make mrproper sudo make clean sudo make menuconfig 根据自己处理器的最大线程数目来编译. 1sudo make -j4 编译后安装内核到系统中. 12sudo make modules_install sudo make install 重启加载内核. 编写程序验证系统调用. 123456789101112#include&lt;stdio.h&gt;#define QUICK_SORT 334int main()&#123; int i,a[]=&#123;9,20,36,10,1,2,6,4,5,8&#125;; syscall(QUICK_SORT,a,0,9); for(i=0;i&lt;10;i++) &#123; printf(“%d\t”,a[i]); &#125; return 0;&#125; 编译C程序: 12 gcc -o test test.c./test]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[Google Chrome被劫持事件]]></title>
+      <url>%2F2017%2F05%2F19%2Findexpage%2F</url>
+      <content type="text"><![CDATA[今天打开Chrome浏览器，发现Chrome浏览器的主页被重定向到了垃圾网站hao123去了，作为一名程序员，最可耻这种未经用户允许就篡改主页来赚取流量的行为！再说了，这种垃圾网站怎么能作为首页呢？ 反复调查得知，Chrome浏览器不是直接被更改掉了主页，而是在快捷启动的目标一栏中加入了参数，导致每次通过快捷方式启动Chrome浏览器的时候，浏览器会首先访问加入参数的网站，如图所示：可以很清楚的看到启动参数后面被加入了http://hao643.com这个网站，去Whois上查询了这个域名的信息：然后又顺手查了下这个HICHINA ZHICHENG TECHNOLOGY LTD.的信息，发现很早就有人就揭露这个公司喜欢篡改用户主页来赚取巨额流量的丑恶行径。再一次鄙视(╬▔皿▔)凸这种恶心行为。原以为解决方法是删除目标后面的启动参数就行了，然而，万万没想到的是：电脑一重启，那个Chrome的快捷方式又被篡改了，真是好气啊！然后我又查看了系统的启动项、当前运行的服务以及系统的计划任务，均没有发现可疑的进程。最后想想是不是每次开机的时候系统都会执行某个脚本来篡改快捷方式呢？因为这种方式极为隐蔽，脚本一被执行，就看不到任何的信息。 下载WMI Event ViewerWMI tools：微软官方出的系统检测工具。WMI工具包括：WMI CIM Studio：查看和编辑类，属性，限定词和在CIM储存库的实例;选定的运行方式;生成并编译MOF文件。 WMI对象浏览器：视图对象，编辑属性值和限定词和运行方法。这个软件网上很容易找到，这里就不提供了。 删除恶意脚本 以管理员方式启动WMI Event Viewer(否则后面无法进行删除操作)，点击左上角的Register for Events; 在Connect to namespace:窗口中点击OK,默认不用输入密码，继续点击OK; 点击EventFilter.Name=&#39;VBScriptLKLive_filter&#39;这一栏查看这个VB脚本的信息，如图：从图中可以很清晰的看出，的确是这个脚本篡改了浏览器的快捷方式，那么，我们只要回到上一个窗口，删除这个脚本即可解决问题。 重启验证高兴的是，重启后，Chrome的快捷方式没有再被篡改了。P.S. 这个示例告诉我们一定要从正规的网站下载软件，千万不要运行来历不明的软件。]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[解决fontawesome-webfont.woff2 404问题]]></title>
+      <url>%2F2017%2F05%2F18%2Ffont404%2F</url>
+      <content type="text"><![CDATA[问题详情如图所示，每次加载服务器上的fontawesome-webfont.woff2字体时，直接报404(Not Found)的错误，然而进入服务器发现这个字体是存在的，后来发现原来是IIS服务器的不认woff2格式的文件。 解决方法找到出错的原因所在，解决这个问题就很容易了。在IIS控制台添加MIME类型，使IIS识别我们的woff2格式的字体。 测试验证重新访问我们的网站，查看Console，看是否有错误输出。很好，问题已经解决:)]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[Workflow插件 - 『豆瓣最新电影』]]></title>
+      <url>%2F2017%2F04%2F21%2Fworkflow_doubanmovie%2F</url>
+      <content type="text"><![CDATA[程序员有三大美德： 傲慢，懒惰以及缺乏耐性。 当然这里的懒惰是指花费最少的力气，尽可能地节省时间来干更多的事情，而本文介绍的Workflow正是这样的一款可以帮助我们达到目的的App.北京时间2017年3月23日星期四，苹果对Workflow 完成了收购。这款应用初期是由三个人的团队来开发，2015年Workflow 获得了Apple Design Award大奖:这款应用后来是由四人团队开发，被Apple收购后并入Apple公司。Workflow 不但有人性化的图形界面和易于理解的拖拽式交互，还内置了许多动作，可以省下使用者用来思考或操作的时间。比如你可以用 Apple 的 API 获取 iTunes Store 和 App Store 里商品的信息，但这个动作做出来会偏复杂。于是 Workflow 就直接提供了一组动作，可以非常直观地实现这个功能。 下面来讲讲一个下午完成的『豆瓣最新电影』插件: 准备豆瓣最新电影的API这个API可以从这里找到豆瓣API，可以看到这个API返回的是一段JSON数据：123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102103104105106107108109110111112113114115116117118119120121122123124125126127128129130131132133134135136137138139140141142143144145146&#123; "count": 20, "start": 0, "total": 25, "subjects": [ &#123; "rating": &#123; "max": 10, "average": 7.3, "stars": "40", "min": 0 &#125;, "genres": [ "动作", "犯罪" ], "title": "速度与激情8", "casts": [ &#123; "alt": "https://movie.douban.com/celebrity/1041020/", "avatars": &#123; "small": "https://img3.doubanio.com/img/celebrity/small/53186.jpg", "large": "https://img3.doubanio.com/img/celebrity/large/53186.jpg", "medium": "https://img3.doubanio.com/img/celebrity/medium/53186.jpg" &#125;, "name": "范·迪塞尔", "id": "1041020" &#125;, &#123; "alt": "https://movie.douban.com/celebrity/1044707/", "avatars": &#123; "small": "https://img3.doubanio.com/img/celebrity/small/196.jpg", "large": "https://img3.doubanio.com/img/celebrity/large/196.jpg", "medium": "https://img3.doubanio.com/img/celebrity/medium/196.jpg" &#125;, "name": "道恩·强森", "id": "1044707" &#125;, &#123; "alt": "https://movie.douban.com/celebrity/1018991/", "avatars": &#123; "small": "https://img3.doubanio.com/img/celebrity/small/44470.jpg", "large": "https://img3.doubanio.com/img/celebrity/large/44470.jpg", "medium": "https://img3.doubanio.com/img/celebrity/medium/44470.jpg" &#125;, "name": "查理兹·塞隆", "id": "1018991" &#125; ], "collect_count": 87640, "original_title": "The Fate of the Furious", "subtype": "movie", "directors": [ &#123; "alt": "https://movie.douban.com/celebrity/1009396/", "avatars": &#123; "small": "https://img3.doubanio.com/img/celebrity/small/4451.jpg", "large": "https://img3.doubanio.com/img/celebrity/large/4451.jpg", "medium": "https://img3.doubanio.com/img/celebrity/medium/4451.jpg" &#125;, "name": "F·加里·格雷", "id": "1009396" &#125; ], "year": "2017", "images": &#123; "small": "https://img3.doubanio.com/view/movie_poster_cover/ipst/public/p2444256500.webp", "large": "https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p2444256500.webp", "medium": "https://img3.doubanio.com/view/movie_poster_cover/spst/public/p2444256500.webp" &#125;, "alt": "https://movie.douban.com/subject/26260853/", "id": "26260853" &#125;, &#123; "rating": &#123; "max": 10, "average": 6.5, "stars": "35", "min": 0 &#125;, "genres": [ "喜剧", "动画", "奇幻" ], "title": "蓝精灵：寻找神秘村", "casts": [ &#123; "alt": "https://movie.douban.com/celebrity/1040983/", "avatars": &#123; "small": "https://img3.doubanio.com/img/celebrity/small/414.jpg", "large": "https://img3.doubanio.com/img/celebrity/large/414.jpg", "medium": "https://img3.doubanio.com/img/celebrity/medium/414.jpg" &#125;, "name": "黛米·洛瓦托", "id": "1040983" &#125;, &#123; "alt": "https://movie.douban.com/celebrity/1004593/", "avatars": &#123; "small": "https://img1.doubanio.com/img/celebrity/small/9747.jpg", "large": "https://img1.doubanio.com/img/celebrity/large/9747.jpg", "medium": "https://img1.doubanio.com/img/celebrity/medium/9747.jpg" &#125;, "name": "雷恩·威尔森", "id": "1004593" &#125;, &#123; "alt": "https://movie.douban.com/celebrity/1013768/", "avatars": &#123; "small": "https://img1.doubanio.com/img/celebrity/small/57068.jpg", "large": "https://img1.doubanio.com/img/celebrity/large/57068.jpg", "medium": "https://img1.doubanio.com/img/celebrity/medium/57068.jpg" &#125;, "name": "乔·曼根尼罗", "id": "1013768" &#125; ], "collect_count": 803, "original_title": "Smurfs: The Lost Village", "subtype": "movie", "directors": [ &#123; "alt": "https://movie.douban.com/celebrity/1014327/", "avatars": &#123; "small": "https://img3.doubanio.com/img/celebrity/small/1359185145.13.jpg", "large": "https://img3.doubanio.com/img/celebrity/large/1359185145.13.jpg", "medium": "https://img3.doubanio.com/img/celebrity/medium/1359185145.13.jpg" &#125;, "name": "凯利·阿斯博瑞", "id": "1014327" &#125; ], "year": "2017", "images": &#123; "small": "https://img1.doubanio.com/view/movie_poster_cover/ipst/public/p2443742358.webp", "large": "https://img1.doubanio.com/view/movie_poster_cover/lpst/public/p2443742358.webp", "medium": "https://img1.doubanio.com/view/movie_poster_cover/spst/public/p2443742358.webp" &#125;, "alt": "https://movie.douban.com/subject/19899718/", "id": "19899718" &#125;, ], "title": "正在上映的电影-北京"&#125; 因为服务器限制，这个JSON共包含了20个subject数据,由于篇幅过长，这里截取了2个subject,每个subject是一部电影的信息，包括title,yaer等其他信息。 解析JSON数据Workflow中的Get Variable可以很容易将JSON作为Dictionary以&lt;key,value&gt;的形式提取出来,这里首先是导出20个subject的内容，此时是输出20个电影的信息。 解析每部电影的信息从上一步得到的是一个List数组，现在需要遍历这个List数组来提取出每部电影的详细信息，所以这里需要用到Repeat with Each这个Action用来循环，这里主要提取title,year,average，images这四个key的value值，对应这部电影的标题，上映年代，评分以及电影封面。 输出信息这里是用的Workfow的Notification这个Action，也就是iOS的通知信息，当然，也可以选择其他的方式，比如HTML。 结语Workflow是一款很有创造力和拓展性的App,用他我们可以实现很多在iOS中本来不能实现或者很难实现的Action.期待你的创意:)最后展示下使用过程：P.S. 『豆瓣最新电影』已经分享在了Workflow中了，点此]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[IIS7以上网站重定向到HTTPS]]></title>
+      <url>%2F2017%2F04%2F14%2FhttpsRedirct%2F</url>
+      <content type="text"><![CDATA[前面博客文章提到了使用JavaScript来强制使访问HTTP的页面来跳转到对应的HTTPS页面，嗯，毕竟Google Chrome 浏览器已经把未启用SSL的网站直接标记为不安全了，直接使用JavaScript来跳转的话，会使SEO出现很大的问题，导致百度蜘蛛无法抓取到自己的网站，搜索引擎也就无法收录了，使用下面的URL Rewrite方案即可解决这一问题。 安装URL Rewrite模块IIS7及以上安装URL Rewrite模块，下载URI Rewrite模块扩展，点击安装，重启IIS。 在URL Rewrite配置重定向规则 打开URL Rewrite模块; 点击右侧栏的添加规则; 选择空白规则; Name可以随便填写，Requested URL选择为Matches the Pattern,Using选择为Regular Expressions,Patter填写为(.*); 在条件中添加如下两条记录： 在动作一栏中添加如下:Redirect URL填写为https://{HTTP_HOST}:443/{R:1} 注意这里是花括号，不是小括号，Redirect type选择为 Permanent(301)，也就是永久性重定向,最后选择应用即可；]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[使用VS Code写PHP并进行调试]]></title>
+      <url>%2F2017%2F03%2F23%2Fvscode%2F</url>
+      <content type="text"><![CDATA[VS Code（Visual Studio Code）是由微软研发的一款免费、开源的跨平台文本（代码）编辑器。 先从官网下载安装好VS Code.官方下载地址是https://code.visualstudio.com/ 安装PHP套件，这是用的是XAMPP套件(集成Apache,MySQL,FileZilla,Mercury,Tomcat等开发环境)。下载链接 https://www.apachefriends.org/zh_cn/index.html 打开VS Code,安装 php-debug扩展，Ctrl +P,输入 ext install php-debug 回车，点击安装扩展。 配置用户的设置： 配置PHP路径：​将 php.validate.executablePath”: “G:/xampp/php/php.exe” 当然，后面的路径要根据XAMPP的安装路径来更改，还有就是要在上条语句后面加个英文状态下的逗号。 将PHP文件置于Apache的启动目录下： 启动Apache服务器： 打开PHP文件，在指定行按F9设置断点然后启动调试.]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[Windows 10 开启上帝模式]]></title>
+      <url>%2F2017%2F02%2F14%2Fgodmode%2F</url>
+      <content type="text"><![CDATA[从Windows Vista 时代开始，微软就在系统中加入了上帝模式，来方便开发者或支持人员快速更改系统的设置，无需在菜单只中一个一个查找选项。 接下来就是上帝模式在 Windows 10 中的开启方法: 在桌面新建一个文件夹。 将刚才的文件夹重命名，重命名为 GodMode.{ED7BA470-8E54-465E-825C-99712043E01C} ，然后保存即可。 这时候就会惊奇地发现一个命名为GodMode 的文件出现，其图标和控制面板一样。 双击打开，发现其布局和控制面板差不多，只是内容是更加丰富。]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[解决在Outlook中添加QQ邮箱提醒账户设置过期的问题]]></title>
+      <url>%2F2016%2F11%2F24%2Fqq_mail%2F</url>
+      <content type="text"><![CDATA[很多人在outlook邮箱中添加QQ邮箱或者163邮箱后，系统会不时提醒邮箱账户设置已过期，重新添加后仍然出现此提示，很是烦人。 以下以QQ邮箱作为示例： 首先登录QQ邮箱的网页版，进入设置-&gt;账户 找到如下图所示的选项： 把POP3/SMTP服务和IMAP/SMTP服务开启，点击生成授权码。 按照图中的操作说明，用绑定的手机来发送图中要求的一串字符到指定的号码(如果不知道手机号码或者号码遗失，就只能申诉了)，发送后，点击图中的”我已发送”按钮，腾讯服务器确认身份后会生成如图所示的授权码： 复制授权码，在Outlook邮箱添加账户的时候，输入邮箱地址，密码栏粘贴刚才生成的授权码，点击登录即可。 如果验证通过，会提示设置成功，这样以后就不会再出现邮箱账户过期的提示了。P.S.163邮箱也是同样的操作。 什么是授权码？QQ邮箱官方给的解释是： 授权码是QQ邮箱推出的，用于登录第三方客户端的专用密码。适用于登录以下服务：POP3/IMAP/SMTP/Exchange/CardDAV/CalDAV服务。温馨提醒：为了你的帐户安全，更改QQ密码以及独立密码会触发授权码过期，需要重新获取新的授权码登录。]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[IIS 强制启用HTTPS跳转]]></title>
+      <url>%2F2016%2F11%2F20%2Fhttps_config%2F</url>
+      <content type="text"><![CDATA[HTTPS（全称：Hyper Text Transfer Protocol over Secure Socket Layer），是以安全为目标的HTTP通道，简单讲是HTTP的安全版。即HTTP下加入SSL层，HTTPS的安全基础是SSL，因此加密的详细内容就需要SSL。 它是一个URI scheme（抽象标识符体系），句法类同http:体系。用于安全的HTTP数据传输。https:URL表明它使用了HTTP，但HTTPS存在不同于HTTP的默认端口及一个加密/身份验证层（在HTTP与TCP之间）。这个系统的最初研发由网景公司(Netscape)进行，并内置于其浏览器Netscape Navigator中，提供了身份验证与加密通讯方法。 自从百度启用https搜索并且优先收录https网站后，越来也多的站点开始部署https，那么在部署https的过程了会遇到一个问题，那就是http自动跳转https的问题，因为过去很长一段时间，大部分网站都是http访问，突然换成https访问，很多人还反应不过来，所以我们网站需要设置http自动跳转到https，那么https配置过程中不同的服务器版本配置http自动跳转https方法上面存在差异。 修改以下文件：IIS6.0 路径： C:\WINDOWS\Help\iisHelp\common\403-4.htm IIS7.0以上路径： C:\inetpub\custerr\zh-CN\403.htm 将上述的文件更改为：12345678910111213&lt;HTML&gt;&lt;HEAD&gt;&lt;TITLE&gt;该页必须通过安全通道查看&lt;/TITLE&gt;&lt;META HTTP-EQUIV=”Content-Type” Content=”text/html; charset=GB2312″&gt;&lt;/HEAD&gt;&lt;BODY&gt;&lt;script type=”text/javascript”&gt; var url = window.location.href; if (url.indexOf(“https”) &lt; 0) &#123; url = url.replace(“http:”, “https:”); window.location.replace(url);&#125;&lt;/script&gt;&lt;/BODY&gt;&lt;/HTML&gt; 同时在IIS6中，站点属性–&gt;目录安全性–&gt;编辑中把”要求安全通道（SSL）”勾选上.在IIS7、8中，SSL设置–&gt;把”要求SSL”勾选.现在网站能够实现访问http页面强制跳转https页面了:)]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[提取Windows 10的锁屏聚焦壁纸]]></title>
+      <url>%2F2016%2F11%2F12%2FspotLight%2F</url>
+      <content type="text"><![CDATA[聚焦(Spotlight)是Windows 10相对于以前的Windows版本新增的一款提供锁屏壁纸的功能。 非常漂亮的图片只能显示在锁屏上，是不是很可惜，想要将此作为壁纸或者其他用途，该怎么办呢？下面开始提取聚焦壁纸。 1.按win+R调出运行窗口或者在资源管理器的地址栏输入 1%localappdata%\Packages\Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy\LocalState\Assets 就会进入聚焦壁纸的文件夹Assets,能看见很多没有格式后缀名的文件。2.在Assets文件夹下按shift+鼠标右键，选择从此处打开命令窗口，输入1ren *.* *.jpg 回车，将所有文件重命名为.jpg文件，这时候就能看到原本只能在锁屏上显示的图片了，是不是很漂亮？ 下面展示我的电脑上面的聚焦壁纸： P.S. Assets文件夹里面不仅包括PC上的聚焦壁纸，还包括展示在锁屏上的应用图标，如：网易云音乐，Xbox应用；同时还包含Windows 10 Mobile手机上面的聚焦壁纸，选择按照Size 大小排序即可分辨。]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[处理UWP程序的Back后退键]]></title>
+      <url>%2F2016%2F11%2F11%2FUWP-back-btn%2F</url>
+      <content type="text"><![CDATA[什么是UWP UWP即Windows 10 中的Universal Windows Platform简称。即Windows通用应用平台，在Windows 10 Mobile(Lumia 系列等)/Surface(Windows平板电脑）/PC/Xbox/HoloLens等平台上运行，UWP不同于传统PC上的exe应用,并且和只适用于手机端的app有本质区别。它并不是为某一个终端而设计，而是可以在所有Windows10设备上运行。一款UWP应用针对各平台的代码大部分都是通用的（一个项目），只有很小一部分是平台特定的。在发布到应用商店时需要针对不同平台（处理器）分别编译。 介绍完什么是UWP，下面谈谈在UWP应用程序开发的过程中必须要处理的问题。 UWP应用程序的后退按钮是需要开发者自己处理的。因为在新建Project 的时候，项目模板并不包含后退键的处理代码。 下面开始后退按钮的处理方法： 首先，新建一个空白项目： 空白模板建立成功后，我们需要对此项目添加程序集的引用。 之后打开Projcet的App.xaml.cs文件。 在OnLaunched方法中 添加如下判断代码：12if ("Windows.Mobile" == Windows.System.Profile.AnalyticsInfo.VersionInfo.DeviceFamily) Windows.Phone.UI.Input.HardwareButtons.BackPressed += HardwareButtons_BackPressed; 用来判断程序运行的设备是否是Mobile。 然后同样在App.xaml.cs文件中添加以下方法：123456789private void HardwareButtons_BackPressed(object sender, Windows.Phone.UI.Input.BackPressedEventArgs e)&#123; var rootFrame = Window.Current.Content as Frame; if (rootFrame.CanGoBack) &#123; rootFrame.GoBack(); e.Handled = true; &#125;&#125; 此方法是注册按下后退按钮的事件，用来返回上一个页面。 以上就可以正确处理UWP程序的后退按钮。 P.S.如何在后退时保持前一个页面的状态,防止被重新载入？需要在前一个页面的构造函数里加NavigationCacheMode即可，来打开页面导航的缓存。12345public MainPage()&#123; InitializeComponent(); NavigationCacheMode = NavigationCacheMode.Enabled;&#125;]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[Hello World]]></title>
+      <url>%2F2016%2F11%2F08%2Fhello_world%2F</url>
+      <content type="text"><![CDATA[Welcome to my Blog.这是我的第一篇博文，是一个程序员按例向这个世界打招呼的形式。在这里，我会分享很多有关Computer，Mobile以及其他有趣的事情。敬请期待!:) 来自程序员的问候！C 语言版本123456#include &lt;stdio.h&gt;int main()&#123; printf("Hello World!"); return 0;&#125; More info: 我的微博]]></content>
+    </entry>
+
+    
+  
+  
+</search>
