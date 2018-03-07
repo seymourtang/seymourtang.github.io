@@ -4,8 +4,29 @@
 
     
   <url>
-    <loc>http://www.mxvar.com/2017/08/26/ubuntusources/</loc>
-    <lastmod>2017-10-24T11:41:15.713Z</lastmod>
+    <loc>https://www.mxvar.com/2018/03/03/nginx-redirect/</loc>
+    <lastmod>2018-03-03T09:01:17.023Z</lastmod>
+    <data>
+        <display>
+        <title>Nginx 将网站完全重定向到'www'、'https'</title>
+        <pubTime>2018-03-03T07:46:20.000Z</pubTime>
+        
+        <tag>Nginx</tag>
+         
+         
+           
+             
+              <breadCrumb title="HTTPS" url="https://www.mxvar.com/categories/HTTPS/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+  <url>
+    <loc>https://www.mxvar.com/2017/08/26/ubuntusources/</loc>
+    <lastmod>2018-02-25T12:57:07.211Z</lastmod>
     <data>
         <display>
         <title>Ubuntu软件源更换为国内源</title>
@@ -16,7 +37,7 @@
          
            
              
-              <breadCrumb title="Linux" url="http://www.mxvar.com/categories/Linux/"/>
+              <breadCrumb title="Linux" url="https://www.mxvar.com/categories/Linux/"/>
           
         </display>
     </data>
@@ -24,8 +45,116 @@
 
     
   <url>
-    <loc>http://www.mxvar.com/2017/08/25/cmdfont/</loc>
-    <lastmod>2017-08-26T13:20:46.737Z</lastmod>
+    <loc>https://www.mxvar.com/2018/01/20/efcodefirst/</loc>
+    <lastmod>2018-01-20T10:49:04.000Z</lastmod>
+    <data>
+        <display>
+        <title>ASP.NET Core Web API使用EF Core Code First模式</title>
+        <pubTime>2018-01-20T06:42:15.000Z</pubTime>
+        
+        <tag>Entity Framework</tag>
+         
+        <tag>ASP.NET Core</tag>
+         
+        <tag>Web API</tag>
+         
+         
+           
+             
+              <breadCrumb title="ASP.NET Core" url="https://www.mxvar.com/categories/ASP-NET-Core/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.mxvar.com/2018/01/15/recover-spotlight/</loc>
+    <lastmod>2018-01-15T09:03:58.887Z</lastmod>
+    <data>
+        <display>
+        <title>解决Windows 10 spotlight锁屏壁纸不更新问题</title>
+        <pubTime>2018-01-15T08:14:41.000Z</pubTime>
+        
+        <tag>Windows 10</tag>
+         
+        <tag>Spotlight</tag>
+         
+         
+           
+             
+              <breadCrumb title="Windows 10" url="https://www.mxvar.com/categories/Windows-10/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.mxvar.com/2017/02/14/godmode/</loc>
+    <lastmod>2018-01-15T08:17:52.223Z</lastmod>
+    <data>
+        <display>
+        <title>Windows 10 开启上帝模式</title>
+        <pubTime>2017-02-14T11:17:30.000Z</pubTime>
+        
+        <tag>Windows 10</tag>
+         
+         
+           
+             
+              <breadCrumb title="Windows 10" url="https://www.mxvar.com/categories/Windows-10/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.mxvar.com/2018/01/10/wpf_mahapps_metro/</loc>
+    <lastmod>2018-01-10T08:51:29.097Z</lastmod>
+    <data>
+        <display>
+        <title>WPF使用MahApps.Metro UI库</title>
+        <pubTime>2018-01-10T07:51:30.000Z</pubTime>
+        
+        <tag>MahApps.Metro</tag>
+         
+        <tag>WPF</tag>
+         
+         
+           
+             
+              <breadCrumb title="WPF" url="https://www.mxvar.com/categories/WPF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.mxvar.com/2018/01/07/npm-registry/</loc>
+    <lastmod>2018-01-07T14:40:49.282Z</lastmod>
+    <data>
+        <display>
+        <title>npm 官方源替换为淘宝源</title>
+        <pubTime>2018-01-07T14:13:26.000Z</pubTime>
+        
+        <tag>npm</tag>
+         
+         
+           
+             
+              <breadCrumb title="npm" url="https://www.mxvar.com/categories/npm/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.mxvar.com/2017/08/25/cmdfont/</loc>
+    <lastmod>2017-08-26T13:20:46.738Z</lastmod>
     <data>
         <display>
         <title>更改Windows CMD以及Powershell字体为Consolas</title>
@@ -38,16 +167,15 @@
          
            
              
-              <breadCrumb title="Windows" url="http://www.mxvar.com/categories/Windows/"/>
+              <breadCrumb title="Windows" url="https://www.mxvar.com/categories/Windows/"/>
           
         </display>
     </data>
     </url>
 
     
-    
   <url>
-    <loc>http://www.mxvar.com/2017/08/12/fiddler/</loc>
+    <loc>https://www.mxvar.com/2017/08/12/fiddler/</loc>
     <lastmod>2017-08-12T14:31:12.816Z</lastmod>
     <data>
         <display>
@@ -59,7 +187,7 @@
          
            
              
-              <breadCrumb title="Fiddler" url="http://www.mxvar.com/categories/Fiddler/"/>
+              <breadCrumb title="Fiddler" url="https://www.mxvar.com/categories/Fiddler/"/>
           
         </display>
     </data>
@@ -67,7 +195,7 @@
 
     
   <url>
-    <loc>http://www.mxvar.com/2017/08/06/addhsts/</loc>
+    <loc>https://www.mxvar.com/2017/08/06/addhsts/</loc>
     <lastmod>2017-08-06T13:16:27.642Z</lastmod>
     <data>
         <display>
@@ -79,7 +207,7 @@
          
            
              
-              <breadCrumb title="HTTPS" url="http://www.mxvar.com/categories/HTTPS/"/>
+              <breadCrumb title="HTTPS" url="https://www.mxvar.com/categories/HTTPS/"/>
           
         </display>
     </data>
@@ -87,8 +215,8 @@
 
     
   <url>
-    <loc>http://www.mxvar.com/2017/06/22/linuxsyscall/</loc>
-    <lastmod>2017-06-22T16:35:16.107Z</lastmod>
+    <loc>https://www.mxvar.com/2017/06/22/linuxsyscall/</loc>
+    <lastmod>2017-06-22T16:35:16.108Z</lastmod>
     <data>
         <display>
         <title>Ubuntu添加系统调用</title>
@@ -99,7 +227,7 @@
          
            
              
-              <breadCrumb title="Linux" url="http://www.mxvar.com/categories/Linux/"/>
+              <breadCrumb title="Linux" url="https://www.mxvar.com/categories/Linux/"/>
           
         </display>
     </data>
@@ -107,8 +235,8 @@
 
     
   <url>
-    <loc>http://www.mxvar.com/2017/05/19/indexpage/</loc>
-    <lastmod>2017-06-02T07:49:40.277Z</lastmod>
+    <loc>https://www.mxvar.com/2017/05/19/indexpage/</loc>
+    <lastmod>2017-06-02T07:49:40.278Z</lastmod>
     <data>
         <display>
         <title>Google Chrome被劫持事件</title>
@@ -119,7 +247,7 @@
          
            
              
-              <breadCrumb title="Browser" url="http://www.mxvar.com/categories/Browser/"/>
+              <breadCrumb title="Browser" url="https://www.mxvar.com/categories/Browser/"/>
           
         </display>
     </data>
@@ -129,7 +257,7 @@
     
     
   <url>
-    <loc>http://www.mxvar.com/2017/05/18/font404/</loc>
+    <loc>https://www.mxvar.com/2017/05/18/font404/</loc>
     <lastmod>2017-05-19T10:49:45.741Z</lastmod>
     <data>
         <display>
@@ -141,7 +269,7 @@
          
            
              
-              <breadCrumb title="IIS" url="http://www.mxvar.com/categories/IIS/"/>
+              <breadCrumb title="IIS" url="https://www.mxvar.com/categories/IIS/"/>
           
         </display>
     </data>
@@ -149,8 +277,8 @@
 
     
   <url>
-    <loc>http://www.mxvar.com/2017/04/21/workflow_doubanmovie/</loc>
-    <lastmod>2017-04-25T08:07:32.935Z</lastmod>
+    <loc>https://www.mxvar.com/2017/04/21/workflow_doubanmovie/</loc>
+    <lastmod>2017-04-25T08:07:32.936Z</lastmod>
     <data>
         <display>
         <title>Workflow插件 - 『豆瓣最新电影』</title>
@@ -161,7 +289,7 @@
          
            
              
-              <breadCrumb title="Workflow" url="http://www.mxvar.com/categories/Workflow/"/>
+              <breadCrumb title="Workflow" url="https://www.mxvar.com/categories/Workflow/"/>
           
         </display>
     </data>
@@ -169,8 +297,8 @@
 
     
   <url>
-    <loc>http://www.mxvar.com/2017/04/14/httpsRedirct/</loc>
-    <lastmod>2017-04-23T13:56:36.761Z</lastmod>
+    <loc>https://www.mxvar.com/2017/04/14/https-redirect/</loc>
+    <lastmod>2017-04-23T13:56:36.762Z</lastmod>
     <data>
         <display>
         <title>IIS7以上网站重定向到HTTPS</title>
@@ -181,7 +309,7 @@
          
            
              
-              <breadCrumb title="Windows Server" url="http://www.mxvar.com/categories/Windows-Server/"/>
+              <breadCrumb title="Windows Server" url="https://www.mxvar.com/categories/Windows-Server/"/>
           
         </display>
     </data>
@@ -190,8 +318,8 @@
     
     
   <url>
-    <loc>http://www.mxvar.com/2017/03/23/vscode/</loc>
-    <lastmod>2017-03-23T14:18:22.334Z</lastmod>
+    <loc>https://www.mxvar.com/2017/03/23/vscode/</loc>
+    <lastmod>2017-03-23T14:18:22.335Z</lastmod>
     <data>
         <display>
         <title>使用VS Code写PHP并进行调试</title>
@@ -202,7 +330,7 @@
          
            
              
-              <breadCrumb title="VS Code" url="http://www.mxvar.com/categories/VS-Code/"/>
+              <breadCrumb title="VS Code" url="https://www.mxvar.com/categories/VS-Code/"/>
           
         </display>
     </data>
@@ -210,12 +338,12 @@
 
     
   <url>
-    <loc>http://www.mxvar.com/2016/11/08/hello_world/</loc>
-    <lastmod>2017-02-24T14:47:49.450Z</lastmod>
+    <loc>https://www.mxvar.com/2016/11/08/hello_world/</loc>
+    <lastmod>2017-02-24T14:47:49.451Z</lastmod>
     <data>
         <display>
         <title>Hello World</title>
-        <pubTime>2016-11-08T08:12:25.981Z</pubTime>
+        <pubTime>2016-11-08T08:12:25.982Z</pubTime>
         
         <tag>破壳日</tag>
          
@@ -226,32 +354,10 @@
     </url>
 
     
-  <url>
-    <loc>http://www.mxvar.com/2017/02/14/godmode/</loc>
-    <lastmod>2017-02-14T12:35:47.649Z</lastmod>
-    <data>
-        <display>
-        <title>Windows 10 开启上帝模式</title>
-        <pubTime>2017-02-14T11:17:30.000Z</pubTime>
-        
-        <tag>Windows 10</tag>
-         
-        <tag>Spotlight</tag>
-         
-         
-           
-             
-              <breadCrumb title="Windows 10" url="http://www.mxvar.com/categories/Windows-10/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
     
   <url>
-    <loc>http://www.mxvar.com/2016/11/20/https_config/</loc>
-    <lastmod>2016-12-29T11:35:37.202Z</lastmod>
+    <loc>https://www.mxvar.com/2016/11/20/https_config/</loc>
+    <lastmod>2016-12-29T11:35:37.203Z</lastmod>
     <data>
         <display>
         <title>IIS 强制启用HTTPS跳转</title>
@@ -262,7 +368,7 @@
          
            
              
-              <breadCrumb title="Windows Server" url="http://www.mxvar.com/categories/Windows-Server/"/>
+              <breadCrumb title="Windows Server" url="https://www.mxvar.com/categories/Windows-Server/"/>
           
         </display>
     </data>
@@ -270,7 +376,7 @@
 
     
   <url>
-    <loc>http://www.mxvar.com/2016/11/24/qq_mail/</loc>
+    <loc>https://www.mxvar.com/2016/11/24/qq_mail/</loc>
     <lastmod>2016-11-24T10:42:11.000Z</lastmod>
     <data>
         <display>
@@ -280,7 +386,7 @@
          
            
              
-              <breadCrumb title="Windows 10" url="http://www.mxvar.com/categories/Windows-10/"/>
+              <breadCrumb title="Windows 10" url="https://www.mxvar.com/categories/Windows-10/"/>
           
         </display>
     </data>
@@ -288,21 +394,21 @@
 
     
   <url>
-    <loc>http://www.mxvar.com/2016/11/11/UWP-back-btn/</loc>
-    <lastmod>2016-11-19T18:32:48.541Z</lastmod>
+    <loc>https://www.mxvar.com/2016/11/11/UWP-back-btn/</loc>
+    <lastmod>2016-11-19T18:32:48.542Z</lastmod>
     <data>
         <display>
         <title>处理UWP程序的Back后退键</title>
         <pubTime>2016-11-11T06:08:01.414Z</pubTime>
         
-        <tag>UWP</tag>
-         
         <tag>Windows 10</tag>
+         
+        <tag>UWP</tag>
          
          
            
              
-              <breadCrumb title="UWP" url="http://www.mxvar.com/categories/UWP/"/>
+              <breadCrumb title="UWP" url="https://www.mxvar.com/categories/UWP/"/>
           
         </display>
     </data>
@@ -310,12 +416,12 @@
 
     
   <url>
-    <loc>http://www.mxvar.com/2016/11/12/spotLight/</loc>
-    <lastmod>2016-11-19T18:32:31.593Z</lastmod>
+    <loc>https://www.mxvar.com/2016/11/12/spotLight/</loc>
+    <lastmod>2016-11-19T18:32:31.594Z</lastmod>
     <data>
         <display>
         <title>提取Windows 10的锁屏聚焦壁纸</title>
-        <pubTime>2016-11-12T12:36:48.539Z</pubTime>
+        <pubTime>2016-11-12T12:36:48.540Z</pubTime>
         
         <tag>Windows 10</tag>
          
@@ -324,7 +430,7 @@
          
            
              
-              <breadCrumb title="Windows 10" url="http://www.mxvar.com/categories/Windows-10/"/>
+              <breadCrumb title="Windows 10" url="https://www.mxvar.com/categories/Windows-10/"/>
           
         </display>
     </data>
