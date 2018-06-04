@@ -5,15 +5,15 @@
     
   <url>
     <loc>https://www.mxvar.com/2018/06/02/conver-win32-to-uwp/</loc>
-    <lastmod>2018-06-02T15:32:15.684Z</lastmod>
+    <lastmod>2018-06-04T03:34:04.435Z</lastmod>
     <data>
         <display>
         <title>如何使用Visual Studio将传统桌面程序转制为UWP程序</title>
         <pubTime>2018-06-02T09:41:29.000Z</pubTime>
         
-        <tag>UWP</tag>
-         
         <tag>Windows 10</tag>
+         
+        <tag>UWP</tag>
          
         <tag>转制</tag>
          
@@ -425,9 +425,9 @@
         <title>处理UWP程序的Back后退键</title>
         <pubTime>2016-11-11T06:08:01.414Z</pubTime>
         
-        <tag>UWP</tag>
-         
         <tag>Windows 10</tag>
+         
+        <tag>UWP</tag>
          
          
            
