@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.mxvar.com/2017/08/06/addhsts/</loc>
+    
+    <lastmod>2018-07-05T12:31:11.518Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.mxvar.com/2018/06/02/conver-win32-to-uwp/</loc>
     
     <lastmod>2018-06-21T14:31:50.179Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>https://www.mxvar.com/about/index.html</loc>
     
     <lastmod>2018-05-30T13:09:12.899Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.mxvar.com/2017/08/06/addhsts/</loc>
-    
-    <lastmod>2018-03-08T14:15:33.684Z</lastmod>
     
   </url>
   
