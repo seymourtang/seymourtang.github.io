@@ -3,6 +3,26 @@
 
 
     
+  <url>
+    <loc>https://www.mxvar.com/2017/08/26/ubuntusources/</loc>
+    <lastmod>2018-09-12T16:43:41.470Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu软件源更换为国内源</title>
+        <pubTime>2017-08-26T13:43:21.000Z</pubTime>
+        
+        <tag>Ubuntu</tag>
+         
+         
+           
+             
+              <breadCrumb title="Linux" url="https://www.mxvar.com/categories/Linux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
     
   <url>
     <loc>https://www.mxvar.com/2017/08/06/addhsts/</loc>
@@ -32,9 +52,9 @@
         <title>如何使用Visual Studio将传统桌面程序转制为UWP程序</title>
         <pubTime>2018-06-02T09:41:29.000Z</pubTime>
         
-        <tag>UWP</tag>
-         
         <tag>Windows 10</tag>
+         
+        <tag>UWP</tag>
          
         <tag>转制</tag>
          
@@ -62,26 +82,6 @@
            
              
               <breadCrumb title="HTTPS" url="https://www.mxvar.com/categories/HTTPS/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://www.mxvar.com/2017/08/26/ubuntusources/</loc>
-    <lastmod>2018-02-25T12:57:07.211Z</lastmod>
-    <data>
-        <display>
-        <title>Ubuntu软件源更换为国内源</title>
-        <pubTime>2017-08-26T13:43:21.000Z</pubTime>
-        
-        <tag>Ubuntu</tag>
-         
-         
-           
-             
-              <breadCrumb title="Linux" url="https://www.mxvar.com/categories/Linux/"/>
           
         </display>
     </data>
@@ -425,9 +425,9 @@
         <title>处理UWP程序的Back后退键</title>
         <pubTime>2016-11-11T06:08:01.414Z</pubTime>
         
-        <tag>UWP</tag>
-         
         <tag>Windows 10</tag>
+         
+        <tag>UWP</tag>
          
          
            
