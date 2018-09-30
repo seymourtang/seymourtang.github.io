@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>https://www.mxvar.com/2018/01/10/wpf_mahapps_metro/</loc>
+    <lastmod>2018-09-30T13:10:09.597Z</lastmod>
+    <data>
+        <display>
+        <title>WPF使用MahApps.Metro UI库</title>
+        <pubTime>2018-01-10T07:51:30.000Z</pubTime>
+        
+        <tag>MahApps.Metro</tag>
+         
+        <tag>WPF</tag>
+         
+         
+           
+             
+              <breadCrumb title="WPF" url="https://www.mxvar.com/categories/WPF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://www.mxvar.com/2017/08/26/ubuntusources/</loc>
     <lastmod>2018-09-12T16:43:41.470Z</lastmod>
     <data>
@@ -148,28 +170,6 @@
            
              
               <breadCrumb title="Windows 10" url="https://www.mxvar.com/categories/Windows-10/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://www.mxvar.com/2018/01/10/wpf_mahapps_metro/</loc>
-    <lastmod>2018-01-10T08:51:29.097Z</lastmod>
-    <data>
-        <display>
-        <title>WPF使用MahApps.Metro UI库</title>
-        <pubTime>2018-01-10T07:51:30.000Z</pubTime>
-        
-        <tag>MahApps.Metro</tag>
-         
-        <tag>WPF</tag>
-         
-         
-           
-             
-              <breadCrumb title="WPF" url="https://www.mxvar.com/categories/WPF/"/>
           
         </display>
     </data>
