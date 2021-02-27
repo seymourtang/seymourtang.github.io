@@ -1,0 +1,5 @@
+name = "三梦哥"
+# avatar = "images/profile.png" # Avatar image. Default to "images/profile.webp".
+bio = "软件设计师，Golang 开发者，Kubernetes 云原生开发."
+company = "Agora"
+location = "上海，中国"
