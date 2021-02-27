@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>小梦博客</title>
+    <link>/</link>
+    <description>Recent content on 小梦博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>Copyright © 2016-{year} 小梦博客. All Rights Reserved.</copyright>
+    <lastBuildDate>Sun, 13 Dec 2020 15:20:49 +0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>和她</title>
+      <link>/posts/with-baby/</link>
+      <pubDate>Sun, 13 Dec 2020 15:20:49 +0800</pubDate>
+      
+      <guid>/posts/with-baby/</guid>
+      <description>&lt;p&gt;和宝贝愉快的国庆八天假期——上海&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>关于</title>
+      <link>/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>My name is Meng, a Golang software engineer at Agora in Shanghai,China 🔭 I’m currently working on CSCD-AD. 🌱 I’m currently learning Kubernetes and Prometheus related technology stack 💬 Ask me about Golang development 📫 How to reach me: @seymourtang 😄 Pronouns: he/him</description>
+    </item>
+    
+    <item>
+      <title>必应</title>
+      <link>/bing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/bing/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
