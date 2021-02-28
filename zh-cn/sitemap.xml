@@ -3,18 +3,53 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/tags/%E4%B8%8A%E6%B5%B7/</loc>
-    <lastmod>2020-12-13T15:20:49+08:00</lastmod>
+    <loc>/tags/download/</loc>
+    <lastmod>2021-02-28T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/font/</loc>
+    <lastmod>2021-02-28T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/gitee/</loc>
+    <lastmod>2021-02-28T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/golang/</loc>
+    <lastmod>2021-02-28T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/macos/</loc>
+    <lastmod>2021-02-28T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/terminal/</loc>
+    <lastmod>2021-02-28T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/zsh/</loc>
+    <lastmod>2021-02-28T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/china-mankind-oh-my-zsh/</loc>
+    <lastmod>2021-02-28T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/go-download-big-file-with-progress/</loc>
+    <lastmod>2021-02-28T00:00:00+08:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2020-12-13T15:20:49+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/en/categories/"
-                />
+    <lastmod>2021-02-28T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
@@ -28,23 +63,13 @@
   </url>
   
   <url>
-    <loc>/posts/with-baby/</loc>
-    <lastmod>2020-12-13T15:20:49+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/%E5%AE%9D%E8%B4%9D/</loc>
-    <lastmod>2020-12-13T15:20:49+08:00</lastmod>
+    <loc>/posts/install-sf-mono-font-on-macos/</loc>
+    <lastmod>2021-02-28T00:00:00+08:00</lastmod>
   </url>
   
   <url>
     <loc>/</loc>
-    <lastmod>2020-12-13T15:20:49+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/en/"
-                />
+    <lastmod>2021-02-28T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
@@ -58,18 +83,18 @@
   </url>
   
   <url>
+    <loc>/bing/</loc>
+    <lastmod>2021-02-28T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/posts/</loc>
-    <lastmod>2020-12-13T15:20:49+08:00</lastmod>
+    <lastmod>2021-02-28T00:00:00+08:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2020-12-13T15:20:49+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/en/tags/"
-                />
+    <lastmod>2021-02-28T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
@@ -83,17 +108,32 @@
   </url>
   
   <url>
+    <loc>/tags/%E4%B8%8A%E6%B5%B7/</loc>
+    <lastmod>2020-12-13T15:20:49+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/with-baby/</loc>
+    <lastmod>2020-12-13T15:20:49+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/%E5%AE%9D%E8%B4%9D/</loc>
+    <lastmod>2020-12-13T15:20:49+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/categories/%E7%94%9F%E6%B4%BB/</loc>
     <lastmod>2020-12-13T15:20:49+08:00</lastmod>
   </url>
   
   <url>
+    <loc>/about/</loc>
+    <lastmod>2020-12-02T15:20:49+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/series/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/en/series/"
-                />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
@@ -107,15 +147,7 @@
   </url>
   
   <url>
-    <loc>/about/</loc>
-  </url>
-  
-  <url>
     <loc>/archives/</loc>
-  </url>
-  
-  <url>
-    <loc>/bing/</loc>
   </url>
   
   <url>
