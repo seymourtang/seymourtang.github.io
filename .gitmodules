@@ -3,4 +3,4 @@
 	url = https://gitee.com/tangxianmeng/hugo-clarity
 [submodule "themes/hugo-theme-bootstrap"]
 	path = themes/hugo-theme-bootstrap
-	url = https://gitee.com/tangxianmeng/hugo-theme-bootstrap
+	url = https://github.com/razonyang/hugo-theme-bootstrap

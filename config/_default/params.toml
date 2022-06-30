@@ -57,10 +57,10 @@ customJS = []
   shenma = ""
 
 [creativeCommons]
-   by = false # Credit must be given to you, the creator.
-   nc = false # Only noncommercial use of your work is permitted.
-   nd = false # No derivatives or adaptations of your work are permitted.
-   sa = false # Adaptations must be shared under the same terms.
+   by = true # Credit must be given to you, the creator.
+   nc = true # Only noncommercial use of your work is permitted.
+   nd = true # No derivatives or adaptations of your work are permitted.
+   sa = true # Adaptations must be shared under the same terms.
 
 [utterances]
   repo = "razonyang/hugo-theme-bootstrap"
@@ -82,8 +82,6 @@ customJS = []
     # useExtendedSearch = true
 
 [reward]
-  alipay = "images/reward/alipay.webp"
-  wechat = "images/reward/wechat.webp"
 
 [share]
   # addThis = "" # AddThis pubid.
