@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Download on 小梦博客</title>
+    <link>/zh-tw/tags/download/</link>
+    <description>Recent content in Download on 小梦博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>Copyright © 2016-{year} 小梦博客. All Rights Reserved.</copyright>
+    <lastBuildDate>Sun, 28 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="/zh-tw/tags/download/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用 Go 进行大文件下载并且显示进度</title>
+      <link>/zh-tw/zh-cn/posts/go-download-big-file-with-progress/</link>
+      <pubDate>Sun, 28 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/zh-tw/zh-cn/posts/go-download-big-file-with-progress/</guid>
+      <description>&lt;p&gt;Go 大文件下载并且显示相应的下载进度&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
