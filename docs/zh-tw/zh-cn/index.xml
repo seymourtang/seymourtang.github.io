@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zh-cns on 小梦博客</title>
+    <link>/zh-tw/zh-cn/</link>
+    <description>Recent content in Zh-cns on 小梦博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>Copyright © 2016-{year} 小梦博客. All Rights Reserved.</copyright>
+    <lastBuildDate>Sun, 28 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="/zh-tw/zh-cn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>必应</title>
+      <link>/zh-tw/zh-cn/bing/</link>
+      <pubDate>Sun, 28 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/zh-tw/zh-cn/bing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>关于</title>
+      <link>/zh-tw/zh-cn/about/</link>
+      <pubDate>Wed, 02 Dec 2020 15:20:49 +0800</pubDate>
+      
+      <guid>/zh-tw/zh-cn/about/</guid>
+      <description>My name is Meng, a Golang software engineer at Agora in Shanghai,China 🔭 I’m currently working on CSDC-AD. 🌱 I’m currently learning Kubernetes and Prometheus related technology stack 💬 Ask me about Golang development 📫 How to reach me: @seymourtang 😄 Pronouns: he/him</description>
+    </item>
+    
+  </channel>
+</rss>
