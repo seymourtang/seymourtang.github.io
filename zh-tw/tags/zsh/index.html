@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>zsh | 小梦博客</title><link rel="apple-touch-icon" href="/images/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/images/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/images/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/images/favicons/manifest.json">
+<link rel="icon" href="/images/favicons/favicon.ico">
+<meta name="description" content="" /><meta itemprop="name" content="zsh">
+<meta itemprop="description" content="小梦博客"><meta property="og:title" content="zsh" />
+<meta property="og:description" content="小梦博客" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="/zh-tw/tags/zsh/" /><meta property="og:site_name" content="小梦博客" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="zsh"/>
+<meta name="twitter:description" content="小梦博客"/>
+<meta name="twitter:site" content="@Tangxianmeng"/>
+<link rel="alternate" type="application/rss+xml" href="/zh-tw/tags/zsh/index.xml" title="小梦博客" /><meta data-name="palette" content="blue"><link rel=stylesheet href="/css/bundle.min.8783ddbc3a052838717dbff9536b33782727c4b9b76f7e3526a60bcc6f452092.css" integrity="sha256-h4PdvDoFKDhxfb/5U2szeCcnxLm3b341JqYLzG9FIJI=" crossorigin="anonymous"><script src="/js/bundle.min.7627ebfcde8c8546409bb8bd457efb63550b6dd29205fd02d9f4100a61de9ad7.js" integrity="sha256-difr/N6MhUZAm7i9RX77Y1ULbdKSBf0C2fQQCmHemtc=" crossorigin="anonymous"></script>
+</head>
+  <body><header><nav class="navbar fixed-top navbar-expand-xl">
+  <div class="container">
+    <a class="navbar-brand" href="/zh-tw/">
+      <img class="logo" alt="Logo" src="/images/logo.webp" loading="lazy">小梦博客</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-2 mb-2 mb-lg-0"><form class="search-bar d-flex mr-2" action="/zh-tw/search">
+  <div class="input-group input-group-sm">
+    <button class="btn btn-search disabled position-absolute left-0" type="submit"><i class="fas fa-fw fa-search"></i></button>
+    <input class="form-control rounded-pill" id="searchQuery" name="q" type="search" aria-label="Search">
+  </div>
+</form></ul><ul class="navbar-nav mb-2 mb-lg-0 mr-2 ml-auto mr-auto"><li class="nav-item">
+          <a class="nav-link" href="/zh-tw/zh-cn/categories/">
+            <i class="fas fa-fw fa-folder"></i>分类
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="/zh-tw/zh-cn/archives/">
+            <i class="fas fa-fw fa-file-archive"></i>归档
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="/zh-tw/zh-cn/tags/">
+            <i class="fas fa-fw fa-tags"></i>标签
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="/zh-tw/zh-cn/bing/">
+            <i class="fas fa-fw fa-image"></i>必应
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="/zh-tw/zh-cn/about/">
+            <i class="fas fa-fw fa-file-archive"></i>关于
+          </a>
+        </li></ul>
+      <ul class="navbar-nav d-flex flex-row mb-2 mb-lg-0"><li class="nav-item mr-2">
+  <a class="nav-link" tabindex="0" data-trigger="click" id="paletteSwitcher" data-toggle="popover" data-placement="bottom" 
+    data-target="#palettesPopoverBody" data-html="true">
+    <i class="fas fa-fw fa-palette" ></i>
+  </a>
+</li>
+<script type="text/html" id="palettesPopoverBody">
+  <ul class="palettes list-group"><li id="palette-blue" class="palette list-group-item bg-blue">
+      <a>藍色</a>
+    </li><li id="palette-blue-gray" class="palette list-group-item bg-blue-gray">
+      <a>藍灰色</a>
+    </li><li id="palette-brown" class="palette list-group-item bg-brown">
+      <a>棕色</a>
+    </li><li id="palette-cyan" class="palette list-group-item bg-cyan">
+      <a>青色</a>
+    </li><li id="palette-green" class="palette list-group-item bg-green">
+      <a>綠色</a>
+    </li><li id="palette-indigo" class="palette list-group-item bg-indigo">
+      <a>靛青色</a>
+    </li><li id="palette-orange" class="palette list-group-item bg-orange">
+      <a>橙色</a>
+    </li><li id="palette-pink" class="palette list-group-item bg-pink">
+      <a>粉色</a>
+    </li><li id="palette-purple" class="palette list-group-item bg-purple">
+      <a>紫色</a>
+    </li><li id="palette-red" class="palette list-group-item bg-red">
+      <a>紅色</a>
+    </li><li id="palette-teal" class="palette list-group-item bg-teal">
+      <a>藍綠色</a>
+    </li><li id="palette-yellow" class="palette list-group-item bg-yellow">
+      <a>黃色</a>
+    </li></ul>
+</script>
+
+<li class="nav-item mr-2">
+  <a class="nav-link" tabindex="0" data-trigger="click" id="fontSizeSwitcher" data-toggle="popover" data-placement="bottom" 
+    data-target="#fontSizesPopoverBody" data-html="true">
+    <i class="fas fa-fw fa-font" ></i>
+  </a>
+</li>
+<script type="text/html" id="fontSizesPopoverBody">
+  <form class="font-size-switcher-form">
+    <label for="fontSize" class="form-label">字體大小</label>
+    <input type="range" class="form-range" min="-2" max="2" id="fontSize">
+  </form>
+</script>
+<form class="mode-switcher-form d-flex align-items-center">
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" id="modeSwitcher">
+  </div>
+</form>
+</ul>
+    </div>
+  </div>
+</nav>
+</header>
+<main role="main" class="container">
+      <div class="row content">
+<div class="col-lg-8">
+  <div class="container"><nav class="row" aria-label="breadcrumb">
+  <ol class="breadcrumb surface"><li class="breadcrumb-item"><a href="/zh-tw/">主頁</a></li><li class="breadcrumb-item"><a href="/zh-tw/tags/">Tags</a></li><li class="breadcrumb-item active">zsh</li></ol>
+</nav><div class="posts mb-4"><article class="post row surface"><div class="post-body">
+        <h2 class="post-title mb-4"><a href="/zh-tw/zh-cn/posts/china-mankind-oh-my-zsh/">中国大陆安装 oh-my-zsh</a></h2><div class="post-meta mb-3">
+  <span class="post-date mr-2">
+    <i class="fas fa-fw fa-calendar-alt"></i>2021-02-28
+  </span>
+  <span class="poost-reading-time mr-2">
+    <i class="fas fa-fw fa-coffee"></i>1 分鐘閱讀
+  </span>
+<a href="/zh-tw/categories/terminal/" class="post-taxonomy">#Terminal</a><a href="/zh-tw/tags/zsh/" class="post-taxonomy">#zsh</a><a href="/zh-tw/tags/gitee/" class="post-taxonomy">#gitee</a></div>
+<div class="post-summary mb-3"><p>使用下面的命令直接从 gitee 镜像仓储来安装</p></div>
+      </div>
+    </article></div><div class="row"></div>
+</div>
+
+</div><aside class="col-lg-4 sidebar d-flex">
+  <div class="container"><section class="profile surface row">
+  <div class="col-xl-6 d-flex align-items-center justify-content-center">
+    <img class="profile-avatar img-fluid" src="/images/profile.webp" alt="三梦哥" loading="lazy">
+  </div>
+  <div class="col-xl-6">
+    <h5 class="profile-name my-2">三梦哥</h5><div class="profile-bio mb-2">软件设计师，Golang 开发者，Kubernetes 云原生开发.</div><div class="profile-company mb-2"><i class="fas fa-fw fa-building"></i>Agora</div><div class="profile-location mb-2"><i class="fas fa-fw fa-map-marker-alt"></i>上海，中国</div></div>
+</section><section class="recent-posts row surface">
+  <h4>最近文章</h4>
+  <ul><li><a href="/zh-tw/zh-cn/posts/china-mankind-oh-my-zsh/">中国大陆安装 oh-my-zsh</a></li><li><a href="/zh-tw/zh-cn/bing/">必应</a></li><li><a href="/zh-tw/zh-cn/posts/install-sf-mono-font-on-macos/">在 macOS 中安装SF Mono字体</a></li><li><a href="/zh-tw/zh-cn/posts/go-download-big-file-with-progress/">使用 Go 进行大文件下载并且显示进度</a></li><li><a href="/zh-tw/zh-cn/posts/with-baby/">和她</a></li></ul>
+</section>
+<section class="taxonomy-categories row surface">
+  <h4>
+    <a href="/zh-tw/categories">分類</a>
+  </h4>
+  <div><a href="/zh-tw/categories/golang/" class="post-taxonomy rounded-pill btn btn-sm mr-2 mb-2" title="Golang">
+      Golang <span class="badge rounded-pill">1</span>
+    </a><a href="/zh-tw/categories/macos/" class="post-taxonomy rounded-pill btn btn-sm mr-2 mb-2" title="macOS">
+      macOS <span class="badge rounded-pill">1</span>
+    </a><a href="/zh-tw/categories/terminal/" class="post-taxonomy rounded-pill btn btn-sm mr-2 mb-2" title="Terminal">
+      Terminal <span class="badge rounded-pill">1</span>
+    </a><a href="/zh-tw/categories/%E7%94%9F%E6%B4%BB/" class="post-taxonomy rounded-pill btn btn-sm mr-2 mb-2" title="生活">
+      生活 <span class="badge rounded-pill">1</span>
+    </a></div>
+</section><section class="taxonomy-tags row surface">
+  <h4>
+    <a href="/zh-tw/tags">標籤</a>
+  </h4>
+  <div><a href="/zh-tw/tags/download/" class="post-taxonomy rounded-pill btn btn-sm mr-2 mb-2" title="Download">
+      Download <span class="badge rounded-pill">1</span>
+    </a><a href="/zh-tw/tags/font/" class="post-taxonomy rounded-pill btn btn-sm mr-2 mb-2" title="Font">
+      Font <span class="badge rounded-pill">1</span>
+    </a><a href="/zh-tw/tags/gitee/" class="post-taxonomy rounded-pill btn btn-sm mr-2 mb-2" title="gitee">
+      gitee <span class="badge rounded-pill">1</span>
+    </a><a href="/zh-tw/tags/zsh/" class="post-taxonomy rounded-pill btn btn-sm mr-2 mb-2" title="zsh">
+      zsh <span class="badge rounded-pill">1</span>
+    </a><a href="/zh-tw/tags/%E4%B8%8A%E6%B5%B7/" class="post-taxonomy rounded-pill btn btn-sm mr-2 mb-2" title="上海">
+      上海 <span class="badge rounded-pill">1</span>
+    </a><a href="/zh-tw/tags/%E5%AE%9D%E8%B4%9D/" class="post-taxonomy rounded-pill btn btn-sm mr-2 mb-2" title="宝贝">
+      宝贝 <span class="badge rounded-pill">1</span>
+    </a></div>
+</section></div>
+</aside>
+</div>
+    </main><footer class="footer mt-auto py-3 text-center container"><nav class="social-links nav my-2 justify-content-center"><li class="nav-item">
+    <a class="nav-link social-link" href="mailto:tangxianmeng@live.com" title="Email">
+      <i class="fas fa-fw fa-2x fa-envelope"></i>
+    </a>
+  </li><li class="nav-item">
+      <a class="nav-link social-link" target="_blank" href="https://github.com/seymourtang" title="Github">
+        <i class="fab fa-fw fa-2x fa-github"></i>
+      </a>
+    </li><li class="nav-item">
+      <a class="nav-link social-link" target="_blank" href="https://twitter.com/Tangxianmeng" title="Twitter">
+        <i class="fab fa-fw fa-2x fa-twitter"></i>
+      </a>
+    </li><li class="nav-item">
+      <a class="nav-link social-link" target="_blank" href="https://weibo.com/tangxianmeng" title="Weibo">
+        <i class="fab fa-fw fa-2x fa-weibo"></i>
+      </a>
+    </li><li class="nav-item">
+    <a class="nav-link social-link" target="_blank" href="/zh-tw/tags/zsh/index.xml" title="RSS">
+      <i class="fas fa-fw fa-2x fa-rss"></i>
+    </a>
+  </li></nav>
+<div class="copyright mb-2">
+  Copyright © 2016-2023 小梦博客. All Rights Reserved.
+</div>
+</footer>
+<a id="btnScrollToTop" class="btn-scroll-to-top">
+  <i class="fas fa-fw fa-chevron-circle-up fa-2x"></i>
+</a>
+</body>
+</html>
