@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>小梦博客</title>
+    <link>/zh-tw/</link>
+    <description>Recent content on 小梦博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>Copyright © 2016-{year} 小梦博客. All Rights Reserved.</copyright>
+    <lastBuildDate>Sun, 28 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="/zh-tw/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>中国大陆安装 oh-my-zsh</title>
+      <link>/zh-tw/zh-cn/posts/china-mankind-oh-my-zsh/</link>
+      <pubDate>Sun, 28 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/zh-tw/zh-cn/posts/china-mankind-oh-my-zsh/</guid>
+      <description>&lt;p&gt;使用下面的命令直接从 gitee 镜像仓储来安装&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>使用 Go 进行大文件下载并且显示进度</title>
+      <link>/zh-tw/zh-cn/posts/go-download-big-file-with-progress/</link>
+      <pubDate>Sun, 28 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/zh-tw/zh-cn/posts/go-download-big-file-with-progress/</guid>
+      <description>&lt;p&gt;Go 大文件下载并且显示相应的下载进度&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>在 macOS 中安装SF Mono字体</title>
+      <link>/zh-tw/zh-cn/posts/install-sf-mono-font-on-macos/</link>
+      <pubDate>Sun, 28 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/zh-tw/zh-cn/posts/install-sf-mono-font-on-macos/</guid>
+      <description>&lt;p&gt;在 macOS 中，&lt;code&gt;SF Mono&lt;/code&gt; 字体不是系统自带的字体，而是包含在&lt;code&gt;Terminal.app&lt;/code&gt;中的字体，因为如果需要在其他的 App 使用到这个字体的话，就需要将这个&lt;code&gt;SF Mono&lt;/code&gt;字体安装在系统当中。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>必应</title>
+      <link>/zh-tw/zh-cn/bing/</link>
+      <pubDate>Sun, 28 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/zh-tw/zh-cn/bing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>和她</title>
+      <link>/zh-tw/zh-cn/posts/with-baby/</link>
+      <pubDate>Sun, 13 Dec 2020 15:20:49 +0800</pubDate>
+      
+      <guid>/zh-tw/zh-cn/posts/with-baby/</guid>
+      <description>&lt;p&gt;和宝贝愉快的国庆八天假期——上海&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>关于</title>
+      <link>/zh-tw/zh-cn/about/</link>
+      <pubDate>Wed, 02 Dec 2020 15:20:49 +0800</pubDate>
+      
+      <guid>/zh-tw/zh-cn/about/</guid>
+      <description>My name is Meng, a Golang software engineer at Agora in Shanghai,China 🔭 I’m currently working on CSDC-AD. 🌱 I’m currently learning Kubernetes and Prometheus related technology stack 💬 Ask me about Golang development 📫 How to reach me: @seymourtang 😄 Pronouns: he/him</description>
+    </item>
+    
+  </channel>
+</rss>
